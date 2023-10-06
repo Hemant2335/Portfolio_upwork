@@ -7,7 +7,7 @@ import { FiMessageSquare } from 'react-icons/fi';
 
 function Profile() {
   return (
-    <div className='md:w-[60vh] md:h-[85vh] top-[10yuhjm,vh] p-4 shadow-3xl rounded-md bg-[#222222] fixed right-[10vh]'>
+    <div className='md:w-[60vh] md:h-[85vh] top-[10yuhjm,vh] p-4 shadow-3xl rounded-lg bg-[#222222] fixed right-[10vh]'>
         
         {/* Name and Title */}
         <div className='flex justify-between items-center'>
@@ -33,14 +33,14 @@ function Profile() {
         {/* Social Media */}
 
         <div className='mt-[2vh] text-sm text-gray-400 flex gap-[2vh] justify-center'>
-          <div className='border-2 border-gray-400 p-2 rounded-3xl'><FiGithub/></div>
-          <div className='border-2 border-gray-400 p-2 rounded-3xl'><FiLinkedin/></div>
-          <div className='border-2 border-gray-400 p-2 rounded-3xl'><FiInstagram/></div>
+          <div className='border-2 cursor-pointer hover:text-[#097969] hover:border-[#097969] border-gray-400 p-2 rounded-3xl'><a href="https://github.com/Hemant2335" target='_blank'><FiGithub/></a></div>
+          <div className='border-2 cursor-pointer hover:text-[#097969] hover:border-[#097969] border-gray-400 p-2 rounded-3xl'><a href="" target='_blank'><FiLinkedin/></a></div>
+          <div className='border-2 cursor-pointer hover:text-[#097969] hover:border-[#097969] border-gray-400 p-2 rounded-3xl'><a href="https://www.instagram.com/_nishant1_kumar/" target='_black'><FiInstagram/></a></div>
         </div>
 
         {/* Hire upwork */}
         <div className='flex w-full justify-between px-[2vh]'>
-        <button className='w-full flex items-center gap-[1vh] justify-center font-bold font-Jetbrains mt-[3vh] p-2 rounded-lg bg-[#097969]'>
+        <button className='w-full flex items-center hover:scale-105 transition-transform hover:border-2 gap-[1vh] justify-center font-bold font-Jetbrains mt-[3vh] p-2 rounded-lg bg-[#097969]'>
           <FiMessageSquare/>
           Hire_Me
         </button>
