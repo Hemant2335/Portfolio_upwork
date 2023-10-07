@@ -7,7 +7,7 @@ import { FiMessageSquare } from 'react-icons/fi';
 
 function Profile() {
   return (
-    <div className='md:w-[60vh] md:h-[85vh] top-[10yuhjm,vh] p-4 shadow-3xl rounded-lg bg-[#222222] fixed right-[10vh]'>
+    <div className='md:w-[60vh] md:h-[85vh] top-[10yuhjm,vh] p-4 shadow-3xl rounded-lg bg-[#222222] fixed right-[10vh] z-10'>
         
         {/* Name and Title */}
         <div className='flex justify-between items-center'>
@@ -16,7 +16,7 @@ function Profile() {
         </div>
         
         {/* Profile Image */}
-        <div className="flex w-full max-h-[50vh] mt-[2vh]">
+        <div className="flex w-full max-h-[50vh] mt-[2vh] p-4 opacity-80">
           <img
             src={profile}
             alt="profile"
@@ -34,7 +34,7 @@ function Profile() {
 
         <div className='mt-[2vh] text-sm text-gray-400 flex gap-[2vh] justify-center'>
           <div className='border-2 cursor-pointer hover:text-[#097969] hover:border-[#097969] border-gray-400 p-2 rounded-3xl'><a href="https://github.com/Hemant2335" target='_blank'><FiGithub/></a></div>
-          <div className='border-2 cursor-pointer hover:text-[#097969] hover:border-[#097969] border-gray-400 p-2 rounded-3xl'><a href="" target='_blank'><FiLinkedin/></a></div>
+          <div className='border-2 cursor-pointer hover:text-[#097969] hover:border-[#097969] border-gray-400 p-2 rounded-3xl'><a href="https://www.linkedin.com/in/nishant-kumar-b198b822b/" target='_blank'><FiLinkedin/></a></div>
           <div className='border-2 cursor-pointer hover:text-[#097969] hover:border-[#097969] border-gray-400 p-2 rounded-3xl'><a href="https://www.instagram.com/_nishant1_kumar/" target='_black'><FiInstagram/></a></div>
         </div>
 

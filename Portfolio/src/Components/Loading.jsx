@@ -66,7 +66,7 @@ const Loading = () => {
 //   }, [isLoading]);
 
   return (
-    <div className='fixed loading h-screen text-left left-0 w-full flex bg-[#171717] z-10 top-0 justify-center items-center'>
+    <div className='fixed loading h-screen text-left left-0 w-full flex bg-[#171717] z-20 top-0 justify-center items-center'>
       <div className='bg-[#222222] h-[50vh] w-[40vw] shadow-3xl rounded-lg'>
         <div className='bg-[#171717] h-[4vh] items-center flex gap-[1vh] p-2'>
           <div className='w-[1.5vh] h-[1.5vh] rounded-[50%] bg-yellow-500'></div>

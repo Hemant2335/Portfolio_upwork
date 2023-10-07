@@ -28,13 +28,13 @@ const Intro = () => {
 
 
   return (
-    <div className="w-full h-[90vh] mt-[2vh]">
-      <div className="flex items-center gap-[1vh] text-sm rounded-2xl border-2 text-gray-400 w-fit h-fit py-2 border-gray-400 px-5">
+    <div className="w-full h-[100vh] mt-[2vh] title">
+      <div className="flex items-center info gap-[1vh] text-sm rounded-2xl border-2 text-gray-400 w-fit h-fit py-2 border-gray-400 px-5">
         <FiHome />
         <h2 className=" font-Jetbrains">Introduction</h2>
       </div>
 
-      <div className="w-full text-left mt-[10vh]">
+      <div className="w-full text-left mt-[10vh] title">
         <div className="flex items-center gap-[2vh] font-bold text-4xl">
           <h1>Hello world! It's</h1>
           <h1 className="font-bold text-4xl text-[#097969]">{displayedText}</h1>
