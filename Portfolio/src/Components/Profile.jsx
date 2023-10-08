@@ -7,7 +7,7 @@ import { FiMessageSquare } from 'react-icons/fi';
 
 function Profile() {
   return (
-    <div className='md:w-[60vh] md:h-[85vh] top-[10yuhjm,vh] p-4 shadow-3xl rounded-lg bg-[#222222] fixed right-[10vh] z-10'>
+    <div className='md:w-[60vh] md:h-[85vh] top-[10yuhjm,vh] p-4 shadow-3xl rounded-lg bg-[#222222] fixed right-[10vh] z-10 profile'>
         
         {/* Name and Title */}
         <div className='flex justify-between items-center'>
@@ -42,7 +42,7 @@ function Profile() {
         <div className='flex w-full justify-between px-[2vh]'>
         <button className='w-full flex items-center hover:scale-105 transition-transform hover:border-2 gap-[1vh] justify-center font-bold font-Jetbrains mt-[3vh] p-2 rounded-lg bg-[#097969]'>
           <FiMessageSquare/>
-          Hire_Me
+          <a href="https://www.upwork.com/freelancers/~01db9c69e1826a0f56" target='_blank'>Hire_Me</a>
         </button>
         </div>
 

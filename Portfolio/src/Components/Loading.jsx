@@ -1,8 +1,10 @@
 import React, { useEffect , useState} from 'react';
+import Context from '../context/Context';
+import { useContext } from 'react';
 
 const Loading = () => {
 
-    const [isLoading, setisLoading] = useState('');
+    const {isLoading , setisLoading} = useContext(Context);
     const [isinput, setisinput] = useState(false);
 
   const terminal = [

@@ -17,6 +17,8 @@ const Intro = () => {
         }
     }
 
+ 
+
     useEffect(() => {
         const interval = setInterval(() => {
             typewriter();
@@ -45,7 +47,7 @@ const Intro = () => {
         <h1 className="mt-[2vh] font-bold text-4xl">Freelancer</h1>
       </div>
 
-      <div className="max-w-[80vh] text-gray-400 text-left mt-[3vh]">
+      <div className="max-w-[80vh] text-gray-400 text-left mt-[3vh] title">
         <p>
           I'm a passionate designer and coder dedicated to crafting beautifully
           simple digital solutions. I find joy in creating elegant,
@@ -54,7 +56,7 @@ const Intro = () => {
         </p>
       </div>
 
-      <div className="w-full text-left mt-[10vh] font-bold">
+      <div className="w-full text-left mt-[10vh] font-bold title">
         <div className="flex items-center gap-[2vh]">
         <h1>Position :</h1>
         <h1 className="text-[#097969]">Coordinator GDSC JUET</h1>
