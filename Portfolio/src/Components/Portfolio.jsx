@@ -14,6 +14,15 @@ const Portfolio = () => {
           <h1 className="font-bold text-3xl text-[#097969]">Projects</h1>
         </div>
       </div>
+
+      <div className='w-[50vw] mt-[8vh] px-[8vh] flex flex-col gap-[5vh]  h-full'>
+        <div className='w-full h-[40vh] rounded-xl shadow-3xl'></div>
+        <div className='flex gap-[2vh]'>
+          <div className='w-full h-[40vh] rounded-xl shadow-3xl'></div>
+          <div className='w-full h-[40vh] rounded-xl shadow-3xl'></div>
+        </div>
+        <div className='w-full h-[40vh] rounded-xl shadow-3xl'></div>
+      </div>
     </div>
   )
 }
