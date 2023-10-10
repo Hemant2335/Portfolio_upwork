@@ -1,10 +1,10 @@
 import React from "react";
-import mongo from "../Assets/mongo.png";
-import react from "../Assets/react.png";
-import next from "../Assets/next.svg";
-import express from "../Assets/express.png";
-import svelte from "../Assets/svelte.png";
-import node from "../Assets/node.png";
+import mongo from "../assets/mongo.png";
+import react from "../assets/react.png";
+import next from "../assets/next.svg";
+import express from "../assets/express.png";
+import svelte from "../assets/svelte.png";
+import node from "../assets/node.png";
 import { FiGrid } from "react-icons/fi";
 
 const Skills = () => {

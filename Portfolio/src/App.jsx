@@ -276,7 +276,7 @@ function App() {
 
 
   return (
-    <div className=' overflow-x-hidden h-fit'>
+    <div>
     <Loading/>
     <Navbar/>
     <Profile/>
