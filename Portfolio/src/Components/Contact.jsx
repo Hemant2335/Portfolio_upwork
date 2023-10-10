@@ -86,7 +86,7 @@ const Contact = () => {
         </div>
       </div>
       <div className="w-full text-left mt-[5vh] md:mt-[10vh]">
-        <button className="md:w-[15vw] flex justify-center items-center p-[2vh]  md:p-[4vh] rounded-lg bg-[#097969] text-white font-bold">
+        <button className="md:w-[15vw] flex justify-center items-center p-[2vh]  md:p-[2vh] rounded-lg bg-[#097969] text-white font-bold">
           Send Message
         </button>
       </div>
