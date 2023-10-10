@@ -39,7 +39,7 @@ const Intro = () => {
       <div className="w-full text-left mt-[10vh] title">
         <div className="md:flex items-center gap-[2vh] font-bold text-2xl md:text-4xl">
           <h1>Hello world! It's</h1>
-          <h1 className="font-bold mt-[2vh] text-2xl md:text-4xl text-[#097969]">{displayedText}</h1>
+          <h1 className="font-bold md:mt-0 mt-[2vh] text-2xl md:text-4xl text-[#097969]">{displayedText}</h1>
         </div>
         <h1 className="mt-[2vh] font-bold text-2xl md:text-4xl">
           Full Stack Developer and
