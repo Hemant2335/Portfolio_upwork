@@ -10,7 +10,7 @@ const About = () => {
       </div>
       <div className="w-full font-bold text-left text-3xl mt-[10vh] abt-title">
         <h1>Exceptional coding journeys begin</h1>
-        <div className="flex items-center mt-[2vh] gap-[2vh] font-bold text-4xl">
+        <div className="md:flex items-center md:mt-[2vh] gap-[2vh] font-bold text-4xl">
           <h1 className=" font-bold text-3xl">with extraordinary</h1>
           <h1 className="font-bold text-3xl text-[#097969]">Narratives.</h1>
         </div>

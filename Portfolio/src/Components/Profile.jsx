@@ -7,10 +7,10 @@ import { FiMessageSquare } from 'react-icons/fi';
 
 function Profile() {
   return (
-    <div className='md:w-[60vh] md:h-[85vh] top-[10yuhjm,vh] p-4 shadow-3xl rounded-lg bg-[#222222] fixed right-[10vh] z-10 profile'>
+    <div className='md:w-[60vh] md:h-[85vh] md:mt-0 mt-[10vh] md:top-[10vh] p-4 shadow-3xl rounded-lg bg-[#222222] md:fixed right-[10vh] z-10 profile'>
         
         {/* Name and Title */}
-        <div className='flex justify-between items-center'>
+        <div className='md:flex text-left justify-between items-center'>
             <h1 className=' font-Jetbrains font-bold text-2xl'>DO_ONE</h1>
             <h2 className=' font-Jetbrains'> Full_stack_Developer</h2>
         </div>
@@ -26,7 +26,7 @@ function Profile() {
 
         {/* About */}
         <div className='mt-[2vh]'>
-          <h2 className=' font-Jetbrains font-bold text-lg'>Console.log("Nishant_Kumar")</h2>
+          <h2 className=' font-Jetbrains font-bold md:text-lg'>Console.log("Nishant_Kumar")</h2>
           <h2 className=' font-Jetbrains font-semibold'>function Current("Btech Student JUET")</h2>
         </div>
 

@@ -52,9 +52,13 @@ const Loading = () => {
       // Clear the text after typing is complete
       document.querySelector('.input').innerHTML += '<p></p>';
       setisinput(true);
-      inputtype('Do you want to continue Y : ' , 0);
+      inputtype('Redirecting...' , 0);
       return ;
     });
+    setTimeout(() => {
+      setisLoading("Y");
+      document.querySelector('.loading').style.display = 'none';      
+    }, 10800);
   }, []);
 
 //   useEffect(() => {
@@ -68,8 +72,8 @@ const Loading = () => {
 //   }, [isLoading]);
 
   return (
-    <div className='fixed loading h-screen text-left left-0 w-full flex bg-[#171717] z-20 top-0 justify-center items-center'>
-      <div className='bg-[#222222] h-[50vh] w-[40vw] shadow-3xl rounded-lg'>
+    <div className='fixed loading h-screen text-left px-2 left-0 w-full flex bg-[#171717] z-20 top-0 justify-center items-center'>
+      <div className='bg-[#222222] min-h-[50vh] md:min-w-0 min-w-full md:h-[50vh] md:w-[40vw] shadow-3xl rounded-lg'>
         <div className='bg-[#171717] h-[4vh] items-center flex gap-[1vh] p-2'>
           <div className='w-[1.5vh] h-[1.5vh] rounded-[50%] bg-yellow-500'></div>
           <div className='w-[1.5vh] h-[1.5vh] rounded-[50%] bg-red-500'></div>
@@ -78,9 +82,6 @@ const Loading = () => {
         <div className='mt-[2vh] p-2 font-semibold'>
           <h1></h1>
           <div className='input flex gap-[2vh] mt-[5vh]'>
-            {
-                isinput && <input type="text" className='border-none bg-[#222222] w-fit focus:outline-0' onChange={(e)=>setisLoading(e.target.value)} onKeyDown={()=>Check()}/>
-            }
           </div>
         </div>
       </div>

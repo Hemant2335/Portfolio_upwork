@@ -7,6 +7,7 @@ import Education from './Components/Education'
 import Services from './Components/Services'
 import Skills from './Components/Skills'
 import Portfolio from './Components/Portfolio'
+import Contact from './Components/Contact'
 import './App.css'
 import { useEffect, useState } from 'react'
 import gsap from 'gsap'
@@ -138,6 +139,46 @@ function App() {
       ease: "power3.out",
       stagger : 0.25
     })
+    gsap.fromTo(".port-title", {y:200 , opacity : 0},{
+      scrollTrigger: {
+        trigger: ".port-title",
+        start: "top 90%",
+        end: "bottom 20%",
+        toggleActions: "play none none reverse",
+        shadowRoot: true,
+        onToggle: ({ isActive }) => {
+          if (isActive) {
+            setcurrcomp("Portfolio"); 
+          }
+        },
+        
+      },
+      opacity: 100,
+      y: 0,
+      duration: 2,
+      ease: "power3.out",
+      stagger : 0.25
+    })
+    gsap.fromTo(".cont-title", {y:200 , opacity : 0},{
+      scrollTrigger: {
+        trigger: ".cont-title",
+        start: "top 90%",
+        end: "bottom 20%",
+        toggleActions: "play none none reverse",
+        shadowRoot: true,
+        onToggle: ({ isActive }) => {
+          if (isActive) {
+            setcurrcomp("Contact"); 
+          }
+        },
+        
+      },
+      opacity: 100,
+      y: 0,
+      duration: 2,
+      ease: "power3.out",
+      stagger : 0.25
+    })
     gsap.fromTo(".edu-edu", {x:200 , opacity : 0},{
       scrollTrigger: {
         trigger: ".edu-edu",
@@ -171,6 +212,8 @@ function App() {
       document.querySelector('.nav-Education').classList.remove('text-[#097969]');
       document.querySelector('.nav-services').classList.remove('text-[#097969]');
       document.querySelector('.nav-skill').classList.remove('text-[#097969]');
+      document.querySelector('.nav-project').classList.remove('text-[#097969]');
+      document.querySelector('.nav-msg').classList.remove('text-[#097969]');
     }
     if(currcomp === "Education"){
       document.querySelector('.nav-Education').classList.add('text-[#097969]');
@@ -178,6 +221,8 @@ function App() {
       document.querySelector('.nav-About').classList.remove('text-[#097969]');
       document.querySelector('.nav-services').classList.remove('text-[#097969]');
       document.querySelector('.nav-skill').classList.remove('text-[#097969]');
+      document.querySelector('.nav-project').classList.remove('text-[#097969]');
+      document.querySelector('.nav-msg').classList.remove('text-[#097969]');
     }
     if(currcomp === "Home"){
       document.querySelector('.nav-home').classList.add('text-[#097969]');
@@ -185,6 +230,8 @@ function App() {
       document.querySelector('.nav-Education').classList.remove('text-[#097969]');
       document.querySelector('.nav-services').classList.remove('text-[#097969]');
       document.querySelector('.nav-skill').classList.remove('text-[#097969]');
+      document.querySelector('.nav-project').classList.remove('text-[#097969]');
+      document.querySelector('.nav-msg').classList.remove('text-[#097969]');
     }
     if(currcomp === "Services"){
       document.querySelector('.nav-services').classList.add('text-[#097969]');
@@ -192,6 +239,8 @@ function App() {
       document.querySelector('.nav-About').classList.remove('text-[#097969]');
       document.querySelector('.nav-Education').classList.remove('text-[#097969]');
       document.querySelector('.nav-skill').classList.remove('text-[#097969]');
+      document.querySelector('.nav-project').classList.remove('text-[#097969]');
+      document.querySelector('.nav-msg').classList.remove('text-[#097969]');
     }
     if(currcomp === "Skills"){
       document.querySelector('.nav-skill').classList.add('text-[#097969]');
@@ -199,6 +248,27 @@ function App() {
       document.querySelector('.nav-About').classList.remove('text-[#097969]');
       document.querySelector('.nav-Education').classList.remove('text-[#097969]');
       document.querySelector('.nav-services').classList.remove('text-[#097969]');
+      document.querySelector('.nav-project').classList.remove('text-[#097969]');
+      document.querySelector('.nav-msg').classList.remove('text-[#097969]');
+
+    }
+    if(currcomp === "Portfolio"){
+      document.querySelector('.nav-project').classList.add('text-[#097969]');
+      document.querySelector('.nav-home').classList.remove('text-[#097969]');
+      document.querySelector('.nav-About').classList.remove('text-[#097969]');
+      document.querySelector('.nav-Education').classList.remove('text-[#097969]');
+      document.querySelector('.nav-services').classList.remove('text-[#097969]');
+      document.querySelector('.nav-skill').classList.remove('text-[#097969]');
+      document.querySelector('.nav-msg').classList.remove('text-[#097969]');
+    }
+    if(currcomp === "Contact"){
+      document.querySelector('.nav-msg').classList.add('text-[#097969]');
+      document.querySelector('.nav-home').classList.remove('text-[#097969]');
+      document.querySelector('.nav-About').classList.remove('text-[#097969]');
+      document.querySelector('.nav-Education').classList.remove('text-[#097969]');
+      document.querySelector('.nav-services').classList.remove('text-[#097969]');
+      document.querySelector('.nav-skill').classList.remove('text-[#097969]');
+      document.querySelector('.nav-project').classList.remove('text-[#097969]');
     }
 
   }, [currcomp]) 
@@ -206,7 +276,7 @@ function App() {
 
 
   return (
-    <>
+    <div className=' overflow-x-hidden h-fit'>
     <Loading/>
     <Navbar/>
     <Profile/>
@@ -216,7 +286,8 @@ function App() {
     <Services/>
     <Skills/>
     <Portfolio/>
-    </>
+    <Contact/>
+    </div>
     
   )
 }

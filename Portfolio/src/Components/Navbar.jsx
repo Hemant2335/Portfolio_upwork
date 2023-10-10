@@ -10,7 +10,7 @@ import { FiMessageSquare } from 'react-icons/fi';
 const Navbar = () => {
   return (
     <div className='w-full h-[5vh] flex items-center justify-center '>
-        <div className='bg-[#222222] w-fit h-fit shadow-3xl p-3 title rounded-3xl fixed'>
+        <div className='bg-[#222222] w-fit h-fit shadow-3xl p-3 title rounded-3xl fixed z-10'>
             <nav>
                 <ul className='flex items-center gap-[3vh] text-lg'>
                     <li className='hover:text-[#097969] cursor-pointer transition-transform nav-home'><FiHome/></li>

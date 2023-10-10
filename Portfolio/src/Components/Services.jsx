@@ -13,24 +13,24 @@ const Services = () => {
       </div>
 
       <div className='mt-[10vh] flex flex-col gap-[10vh] '>
-      <div className='border-2 hover:border-[#097969] srv-title transition-colors w-[50vw] h-fit text-left p-8 rounded-xl flex justify-between items-center'>
+      <div className='border-2 hover:border-[#097969] srv-title transition-colors md:w-[50vw] h-fit text-left p-8 rounded-xl flex justify-between items-center'>
         <div>
-        <h1 className='text-xl font-bold'>Video Editing</h1>
-        <p>I created digital videos using Blender and Filmora</p>
+        <h1 className='md:text-xl font-bold'>Video Editing</h1>
+        <p className='text-sm'>I created digital videos using Blender and Filmora</p>
         </div>
         <TiVideoOutline className='text-3xl text-[#097969]'/>
       </div>
-      <div className='border-2 hover:border-[#097969] srv-title transition-colors w-[50vw] h-fit text-left p-8 rounded-xl flex justify-between items-center'>
+      <div className='border-2 hover:border-[#097969] srv-title transition-colors md:w-[50vw] h-fit text-left p-8 rounded-xl flex justify-between items-center'>
         <div>
-        <h1 className='text-xl font-bold'>Development</h1>
-        <p>I Create Website and app using MERN</p>
+        <h1 className='md:text-xl font-bold'>Development</h1>
+        <p className='text-sm'>I Create Website and app using MERN</p>
         </div>
         <BiCode className='text-3xl text-[#097969]'/>
       </div>
-      <div className='border-2 hover:border-[#097969] srv-title transition-colors w-[50vw] h-fit text-left p-8 rounded-xl flex justify-between items-center'>
+      <div className='border-2 hover:border-[#097969] srv-title transition-colors md:w-[50vw] h-fit text-left p-8 rounded-xl flex justify-between items-center'>
         <div>
-        <h1 className='text-xl font-bold'>Problem Solver</h1>
-        <p>I am also good at problem solving using DSA</p>
+        <h1 className='md:text-xl font-bold'>Problem Solver</h1>
+        <p className='text-sm'>I am also good at problem solving using DSA</p>
         </div>
         <MdOutlineReportProblem className='text-3xl text-[#097969]'/>
       </div>

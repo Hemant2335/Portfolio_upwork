@@ -30,21 +30,21 @@ const Intro = () => {
 
 
   return (
-    <div className="w-full h-[100vh] mt-[2vh] title">
+    <div className="w-full h-[100vh] mt-[10vh] md:mt-[2vh] title">
       <div className="flex items-center info gap-[1vh] text-sm rounded-2xl border-2 text-gray-400 w-fit h-fit py-2 border-gray-400 px-5">
         <FiHome />
         <h2 className=" font-Jetbrains">Introduction</h2>
       </div>
 
       <div className="w-full text-left mt-[10vh] title">
-        <div className="flex items-center gap-[2vh] font-bold text-4xl">
+        <div className="md:flex items-center gap-[2vh] font-bold text-2xl md:text-4xl">
           <h1>Hello world! It's</h1>
-          <h1 className="font-bold text-4xl text-[#097969]">{displayedText}</h1>
+          <h1 className="font-bold mt-[2vh] text-2xl md:text-4xl text-[#097969]">{displayedText}</h1>
         </div>
-        <h1 className="mt-[2vh] font-bold text-4xl">
+        <h1 className="mt-[2vh] font-bold text-2xl md:text-4xl">
           Full Stack Developer and
         </h1>{" "}
-        <h1 className="mt-[2vh] font-bold text-4xl">Freelancer</h1>
+        <h1 className=" font-bold text-2xl md:text-4xl">Freelancer</h1>
       </div>
 
       <div className="max-w-[80vh] text-gray-400 text-left mt-[3vh] title">

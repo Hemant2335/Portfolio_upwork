@@ -10,7 +10,7 @@ const Education = () => {
       </div>
 
       <div className="w-full font-bold text-left text-3xl mt-[10vh] title edu-title">
-        <div className="flex items-center mt-[2vh] gap-[2vh] font-bold text-4xl">
+        <div className="md:flex items-center mt-[2vh] gap-[2vh] font-bold text-4xl">
           <h1 className=" font-bold text-3xl">Education &</h1>
           <h1 className="font-bold text-3xl text-[#097969]">Experience</h1>
         </div>
@@ -28,18 +28,18 @@ const Education = () => {
         <div className="min-w-[80vh] h-fit text-left flex flex-col gap-[15vh] ">
           <div>
           <h2 className="">2022 - present</h2>
-          <h1 className="text-xl font-bold">Bachelor of Technology</h1>
-          <p className="text-gray-400">Jaypee University of Engineering and Technology , Guna</p>
+          <h1 className="md:text-xl font-bold">Bachelor of Technology</h1>
+          <p className="text-gray-400 text-sm w-fit">Jaypee University of <br className="md:hidden flex"></br> Engineering and Technology,<br className="md:hidden flex"></br>Guna</p>
           </div>
           <div>
           <h2 className="">2021 - 2022</h2>
           <h1 className="text-xl font-bold">Higher Secondary Education</h1>
-          <p className="text-gray-400">Kendriya Vidyalaya No.1 Delhi Cantt , New Delhi</p>
+          <p className="text-gray-400 text-sm">Kendriya Vidyalaya No.1 Delhi <br className="md:hidden flex"></br> Cantt , New Delhi</p>
           </div>
           <div className="">
           <h2 className="">2019 - 2020</h2>
           <h1 className="text-xl font-bold">High School Education</h1>
-          <p className="text-gray-400">Kendriya Vidyalaya Mhow, Indore</p>
+          <p className="text-gray-400">Kendriya Vidyalaya<br className="md:hidden flex"></br> Mhow, Indore</p>
           </div>
         </div>
       </div>
