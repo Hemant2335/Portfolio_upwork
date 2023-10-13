@@ -47,7 +47,7 @@ const Contact = () => {
   }
 
   return (
-    <div className="w-full h-fit md:h-screen mt-[10vh] md:mt-[30vh]  cont-title">
+    <div className="w-full h-fit md:h-screen mt-[10vh] md:mt-[30vh]  cont-title" id="Contact">
       <div className="flex items-center info gap-[1vh] text-sm rounded-2xl border-2 text-gray-400 w-fit h-fit py-2 border-gray-400 px-5">
         <FiMessageSquare />
         <h2 className=" font-Jetbrains">Contact</h2>

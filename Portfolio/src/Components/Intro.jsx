@@ -30,7 +30,7 @@ const Intro = () => {
 
 
   return (
-    <div className="w-full h-fit mt-[10vh] md:mt-[10vh] title">
+    <div className="w-full h-fit mt-[10vh] md:mt-[10vh] title" id="Home">
       <div className="flex items-center info gap-[1vh] text-sm rounded-2xl border-2 text-gray-400 w-fit h-fit py-2 border-gray-400 px-5">
         <FiHome />
         <h2 className=" font-Jetbrains">Introduction</h2>

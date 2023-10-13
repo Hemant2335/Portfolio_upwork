@@ -3,7 +3,7 @@ import { FiBriefcase } from "react-icons/fi";
 
 const Education = () => {
   return (
-    <div className="w-full h-fit mt-[12vh] md:mt-[30vh] edu-title">
+    <div className="w-full h-fit mt-[12vh] md:mt-[30vh] edu-title" id="Education">
       <div className="flex items-center info gap-[1vh] text-sm rounded-2xl border-2 text-gray-400 w-fit h-fit py-2 border-gray-400 px-5">
         <FiBriefcase />
         <h2 className=" font-Jetbrains">Resume</h2>
