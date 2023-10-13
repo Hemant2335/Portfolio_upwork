@@ -9,7 +9,7 @@ import { FiGrid } from "react-icons/fi";
 
 const Skills = () => {
   return (
-    <div className="w-full md:h-[100vh] mt-[20vh] skill-title">
+    <div className="w-full md:h-[100vh] mt-[30vh] skill-title">
       <div className="flex items-center info gap-[1vh] text-sm rounded-2xl border-2 text-gray-400 w-fit h-fit py-2 border-gray-400 px-5">
         <FiGrid />
         <h2 className=" font-Jetbrains">Skills</h2>

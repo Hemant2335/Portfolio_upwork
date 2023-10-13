@@ -7,7 +7,7 @@ import onewatch from "../assets/onewatch.png";
 
 const Portfolio = () => {
   return (
-    <div className="w-full h-fit mt-[20vh] port-title">
+    <div className="w-full h-fit mt-[30vh] port-title">
       <div className="flex items-center info gap-[1vh] text-sm rounded-2xl border-2 text-gray-400 w-fit h-fit py-2 border-gray-400 px-5">
         <FiCompass />
         <h2 className=" font-Jetbrains">Portfolio</h2>

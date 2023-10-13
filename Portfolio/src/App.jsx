@@ -276,7 +276,7 @@ function App() {
 
 
   return (
-    <div>
+    <div className=' overflow-hidden' >
     <Loading/>
     <Navbar/>
     <Profile/>

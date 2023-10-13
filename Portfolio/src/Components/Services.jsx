@@ -5,8 +5,8 @@ import { BiCode } from 'react-icons/bi';
 import { MdOutlineReportProblem } from 'react-icons/md';
 
 const Services = () => {
-  return (
-    <div className="w-full h-[100vh] mt-[20vh] srv-title">
+  return (  
+    <div className="w-full h-fit mt-[30vh] srv-title">
       <div className="flex items-center info gap-[1vh] text-sm rounded-2xl border-2 text-gray-400 w-fit h-fit py-2 border-gray-400 px-5">
         <FiBox />
         <h2 className=" font-Jetbrains">Services</h2>

@@ -2,10 +2,52 @@ import React, { useState } from "react";
 import { FiMessageSquare } from "react-icons/fi";
 
 const Contact = () => {
+  const [Name, setName] = useState("")
   const [Email, setEmail] = useState("");
+  const [Phone, setPhone] = useState("");
+  const [Budget, setBudget] = useState("");
+  const [Message, setMessage] = useState("");
+
+
+
+  const handlemessage = async()=>{
+
+    if(Email==="" || Name==="" || Phone==="" || Budget==="" || Message===""){
+      alert("Please fill all the fields")
+    }
+    else{
+      try {
+        const response = await fetch("http://localhost:3000/sendmessage" , {
+        method : "POST",
+        headers : {
+          "Content-Type" : "application/json"
+        },
+        body : JSON.stringify({
+          name:Name,
+          email:Email,
+          phoneno:Phone,
+          budget:Budget,
+          message:Message
+        })
+      })
+      const data = await response.json();
+      if(data?.data === "success" )
+      {
+        alert("Message sent successfully")
+      }
+      else
+      {
+        alert("Something went wrong")
+      }
+        
+      } catch (error) {
+          console.log(error);
+      }
+    }
+  }
 
   return (
-    <div className="w-full h-fit md:h-screen mt-[10vh] md:mt-[50vh]  cont-title">
+    <div className="w-full h-fit md:h-screen mt-[10vh] md:mt-[30vh]  cont-title">
       <div className="flex items-center info gap-[1vh] text-sm rounded-2xl border-2 text-gray-400 w-fit h-fit py-2 border-gray-400 px-5">
         <FiMessageSquare />
         <h2 className=" font-Jetbrains">Contact</h2>
@@ -26,7 +68,7 @@ const Contact = () => {
               type="text"
               className=" mt-2 w-fit rounded-lg py-2 focus:outline-0 font-montserrat  font-medium "
               onChange={(e) => {
-                setEmail(e.target.value);
+                setName(e.target.value);
               }}
               placeholder="Your full name"
             />
@@ -52,7 +94,7 @@ const Contact = () => {
               type="text"
               className=" mt-2 w-full rounded-lg py-2 focus:outline-0 font-montserrat  font-medium "
               onChange={(e) => {
-                setEmail(e.target.value);
+                setPhone(e.target.value);
               }}
               placeholder="Your phone number"
             />
@@ -60,12 +102,13 @@ const Contact = () => {
         </div>
         <div className="w-full text-left ">
           <h1 className="font-bold">BUDGET</h1>
-          <div className=" border-b-2  flex md:w-[45vh]">
+          <div className=" border-b-2 gap-[2vh]  flex items-center mt-2 md:w-[45vh]">
+            <h1>$</h1>
             <input
               type="number"
-              className=" mt-2 w-full rounded-lg py-2 focus:outline-0 font-montserrat  font-medium "
+              className="  w-full rounded-lg py-2 focus:outline-0 font-montserrat  font-medium "
               onChange={(e) => {
-                setEmail(e.target.value);
+                setBudget(e.target.value);
               }}
               placeholder="Your budget"
             />
@@ -78,7 +121,7 @@ const Contact = () => {
               type=""
               className=" mt-2  w-full rounded-lg py-2 focus:outline-0 font-montserrat  font-medium "
               onChange={(e) => {
-                setEmail(e.target.value);
+                setMessage(e.target.value);
               }}
               placeholder="write your message here"
             />
@@ -86,7 +129,7 @@ const Contact = () => {
         </div>
       </div>
       <div className="w-full text-left mt-[5vh] md:mt-[10vh]">
-        <button className="md:w-[15vw] flex justify-center items-center p-[2vh]  md:p-[2vh] rounded-lg bg-[#097969] text-white font-bold">
+        <button className="md:w-[15vw] flex justify-center items-center p-[2vh]  md:p-[2vh] rounded-lg bg-[#097969] text-white font-bold" onClick={()=>handlemessage()}>
           Send Message
         </button>
       </div>
