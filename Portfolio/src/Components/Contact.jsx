@@ -17,7 +17,7 @@ const Contact = () => {
     }
     else{
       try {
-        const response = await fetch("http://localhost:3000/sendmessage" , {
+        const response = await fetch("https://port-backend-hemant2335.vercel.app/sendmessage" , {
         method : "POST",
         headers : {
           "Content-Type" : "application/json"
